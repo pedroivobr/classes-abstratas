@@ -21,7 +21,7 @@ public:
      *
      * Metede de desenho da figura na tela.
      */
-    virtual void draw(Screen &t);
+    virtual void draw(Screen &t)=0;
 };
 
 #endif // FIGURAGEOMETRICA_H
