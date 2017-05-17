@@ -18,19 +18,3 @@ void Retangulo::draw(Screen &t)
     }
 }
 
-int Retangulo::getX(){
-    return x;
-}
-
-int Retangulo::getY(){
-    return y;
-}
-
-int Retangulo::getAltura(){
-    return altura;
-}
-
-int Retangulo::getLargura(){
-    return largura;
-}
-
