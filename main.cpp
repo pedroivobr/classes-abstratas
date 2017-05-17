@@ -39,7 +39,7 @@ int main()
             entrada>>x0>>y0>>r>>fillmode;
             Circulo circulo(x0,y0, r, fillmode);
             circulo.draw(tela);
-            cout<<"circulo de raio: "<<r<< " e centro em: ("<< x0 << ", "<<y0<<") e ";
+            cout<<"circulo de raio "<<r<< ", centrado em ("<< x0 << ", "<<y0<<") e ";
             if(fillmode){
                 cout << "preenchido";
             }
@@ -53,7 +53,7 @@ int main()
             entrada>>x0>>y0>>x1>>y1;
             Reta reta(x0,y0,x1,y1);
             reta.draw(tela);
-            cout<<"reta com P0: ("<<x0<<", "<<y0<<") e P1:("<<x1<<", "<<y1<<")"<<endl;
+            cout<<"reta p0: ("<<x0<<", "<<y0<<") e p1:("<<x1<<", "<<y1<<")"<<endl;
 
         } else if(!strcmp("brush", comando)){
 
@@ -77,7 +77,7 @@ int main()
 
     saida.open("C:/Users/Pedro/Desktop/desenho.txt");
     if(!saida.is_open()){
-        cout<<"nao abriu arquivo saida\n";
+        cout<<"nao abriu arquivo saida" << endl;
         exit(0);
     }
     saida<<tela;
